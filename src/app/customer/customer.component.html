@@ -3,7 +3,7 @@
     <form [formGroup]="this.customerService.form" (ngSubmit)="onSubmit()">
       <input type="hidden" formControlName="$key">
       <div class="form-group">
-        <label>Full Name</label>
+        <label style="color: red;">Full Name</label>
         <input formControlName="fullName" class="form-control" [ngClass]="{'is-invalid' : submitted && formControls.fullName.errors}">
         <div class="invalid-feedback" *ngIf="submitted && formControls.fullName.errors">
           This field is required.
